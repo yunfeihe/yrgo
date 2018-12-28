@@ -10,4 +10,9 @@
 } 
 page {
   background-color: #f7f7f7;
+  /* background-color: #fff; */
+}
+
+.br-20 {
+  height: 40rpx;
 }

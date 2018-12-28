@@ -1,0 +1,11 @@
+
+<view class='main'>
+  <i-grid  wx:for="{{ cnavigator }}"
+    wx:for-item="toolRow"
+    wx:key="{{index}}"
+    >
+    
+    <i-grid-item wx:for="{{ toolRow }}">item.title</i-grid-item>
+  </i-grid>
+  
+</view>

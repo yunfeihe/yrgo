@@ -1,1 +1,4 @@
-/* pages/user/user.wxss */
+.login-card .i-card-header-thumb {
+  border-radius: 50%;
+  overflow: hidden;
+}
