@@ -3,6 +3,7 @@
     hover-class="i-btn-hover"
     bindtap="handleTap"
     open-type="{{ openType }}"
+    form-type="{{ form-type }}"
     app-parameter="{{ appParameter }}"
     hover-stop-propagation="{{ hoverStopPropagation }}"
     hover-start-time="{{ hoverStartTime }}"

@@ -7,6 +7,7 @@ const host = 'http://127.0.0.1:3050';
 
 const apiPath = {
   login: '/api/v1/login',
+  bind: '/api/v1/bind',
 };
 
 const apiAbsPath = {};

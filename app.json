@@ -39,6 +39,10 @@
   },
   "usingComponents": {
     "i-cell-group": "./com/iview/cell-group/index",
-    "i-cell": "./com/iview/cell/index"
+    "i-cell": "./com/iview/cell/index",
+    "i-card": "./com//iview/card/index",
+    "i-button": "./com/iview/button/index",
+    "i-input": "./com/iview/input/index",
+    "i-panel": "./com/iview/panel/index"
   }
 }
