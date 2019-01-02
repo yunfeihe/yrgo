@@ -29,7 +29,7 @@
 
   <i-cell-group>
     <!-- <i-cell title="只显示箭头" is-link></i-cell> -->
-    <i-cell title="绑定教务处账号" is-link url="/pages/user/pages/bind"></i-cell>
+    <i-cell title="绑定教务处账号({{ userInfo.isBinded ? '已绑定' + userInfo.sid : '未绑定' }})" is-link url="/pages/user/pages/bind"></i-cell>
     
     <i-cell title="开关">
         <switch slot="footer" checked />

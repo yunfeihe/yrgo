@@ -2,6 +2,8 @@ const utils = require('../../../utils/utils.js');
 const regeneratorRuntime = require('../../../utils/regenerator-runtime/runtime.js');
 const config = require('../../../config.js');
 
+const app = getApp();
+
 const {
   log,
   wxRequest,
@@ -15,12 +17,19 @@ Page({
    */
   data: {
     sid: '1709102003',
-    password: '180457',
+    password: '555555',
   },
   async handleBind(evt) {
     wx.showLoading({
       title: '绑定中',
     });
+    if(this.data.sid === '' || this.data.password === '') {
+      wx.showToast({
+        title: '账号或密码不能为空',
+        icon: 'none',
+      });
+      return;
+    }
     const params = {
       sid: this.data.sid,
       password: this.data.password,
@@ -28,9 +37,13 @@ Page({
     const bindRes = (await wxRequest({
       url: config.api.bind,
       method: 'POST',
+      data: params,
     })).data;
     wx.hideLoading();
     if(bindRes.code === 0) {
+      app.setUserInfo({
+        isBinded: true,
+      })
       wx.navigateBack({});
       wx.showToast({
         title: '绑定成功',

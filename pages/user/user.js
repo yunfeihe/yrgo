@@ -18,9 +18,9 @@ Page({
       hasUserInfo: true,
     })
   },
-  onLoad() {
+  onShow() {
     console.log('app.globalData', app.globalData);
-    if(app.globalData && app.globalData.hasUserInfo) {
+    if (app.globalData && app.globalData.hasUserInfo) {
       this.setData({
         userInfo: app.getUserInfoSync(),
         hasUserInfo: app.globalData.hasUserInfo,

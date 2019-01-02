@@ -60,7 +60,10 @@ App({
         userInfo.session = loginData.data.session;
         Object.assign(userInfo, loginData.data.userInfo); //isBinded是服务器直接传过来
       } else {
-        throw new Error('app initLoginUserInfo 登陆错误' + loginData.msg);
+        wx.showToast({
+          title: '登陆失败',
+          icon: 'none',
+        });
       }
       await this.setUserInfo(userInfo);
       log('initLoginUserInfo end');
