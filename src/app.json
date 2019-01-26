@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/home/main",
+    "pages/tools/main",
+    "pages/user/main",
+    "pages/user/pages/bind/main",
+    "pages/tools/pages/course/main",
+    "pages/tools/pages/score/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Title",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "backgroundColor": "#fff",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/main",
+        "text": "首页",
+        "iconPath": "./static/images/home.png",
+        "selectedIconPath": "./static/images/home-selected.png"
+      },
+      {
+        "pagePath": "pages/tools/main",
+        "text": "工具箱",
+        "iconPath": "./static/images/tools.png",
+        "selectedIconPath": "./static/images/tools-selected.png"
+      },
+      {
+        "pagePath": "pages/user/main",
+        "text": "个人",
+        "iconPath": "./static/images/user.png",
+        "selectedIconPath": "./static/images/user-selected.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "i-button": "./static/com/iview/button/index",
+    "i-card": "./static/com/iview/card/index",
+    "i-cell-group": "./static/com/iview/cell-group/index",
+    "i-cell": "./static/com/iview/cell/index",
+    "i-grid": "./static/com/iview/grid/index",
+    "i-grid-item": "./static/com/iview/grid-item/index",
+    "i-grid-icon": "./static/com/iview/grid-icon/index",
+    "i-grid-label": "./static/com/iview/grid-label/index",
+    "i-icon": "./static/com/iview/icon/index",
+    "i-input": "./static/com/iview/input/index",
+    "i-panel": "./static/com/iview/panel/index",
+    "i-radio-group": "./static/com/iview/radio-group/index",
+    "i-radio": "./static/com/iview/radio/index",
+    "i-tabs": "./static/com/iview/tabs/index",
+    "i-tab": "./static/com/iview/tab/index",
+    "i-notice-bar": "./static/com/iview/notice-bar/index"
+  }
+}
