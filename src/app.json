@@ -8,7 +8,7 @@
     "pages/tools/pages/score/main"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "black",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Title",
     "navigationBarTextStyle": "black"
